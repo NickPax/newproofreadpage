@@ -1,0 +1,35 @@
+.navbar{
+    box-shadow: none;
+    opacity: 0.8;
+    background: $white;
+  
+    .nav-item{
+      font-size: 0.8rem;
+      padding-right: 5px;
+      padding-left: 5px;
+      text-transform: uppercase;
+    }
+  }
+  
+  .nav-link {
+    color: $info !important;
+  
+    &:hover {
+      color: $primary !important;
+    }
+  }
+
+  .nav-item.active{
+    background: $primary;
+ 
+    a {
+      color: white !important;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    #logo {
+         width: 150px;
+         height: 150px;
+    }
+}

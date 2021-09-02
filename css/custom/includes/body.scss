@@ -1,0 +1,147 @@
+.navbar {
+    font-family:'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    //font-family: 'Montserrat';
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    }
+
+body {
+    background-image: url('/img/white_wall_hash.png');
+  }
+ body p {
+   font-family: 'open-sans';
+ } 
+
+#canvas {
+    border-style: solid;
+    border-color: #eee;
+    background-color:#fff;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+#mypic {
+    margin-right : auto;
+    margin-left : auto;
+    min-width : 300px;
+    //max-width : 900px;
+}
+
+// All below 576 pixels:
+@media (max-width: 576px) {
+  #canvas {
+    border-width: 1px;    
+    padding: 1% 1% 0;
+    margin: 2% 4%;
+    }
+}
+
+// All above 577 pixels:
+@media (min-width: 577px) { 
+  #canvas {
+    border-width: 2px;
+    padding: 0% 7% 0;
+    margin: 0 13.5%;
+   }
+}
+/* ------------------- mid-banner start ---------------------------------- */
+
+.top-banner-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .banner-image-div {
+    grid-area: 1 / 1 / 2 / 2;
+  } //image
+  .banner-overlay-div {
+    grid-area: 1 / 1 / 2 / 2;
+  } //gradient
+  .banner-text-div {
+    grid-area: 1 / 1 / 2 / 2;
+  } //text
+  
+  .banner-image {
+    display: grid;
+    min-width: 250px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .banner-overlay-div {
+    display: grid;
+    max-width: 100%;
+    background: black;
+    background: linear-gradient(
+      60deg,
+  rgba(0, 0, 0, 0.777) 30%,
+  rgba(255, 255, 255, 0) 100%
+    );
+  }
+  
+  .banner-text-div {
+    display: grid;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .banner-h1-text {
+    font-size: calc(10pt + 0.15vw);
+    letter-spacing:  0.05em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+  
+  }
+  
+  .banner-body-text {
+    font-size: calc(10pt + 0.15vw);
+    margin-top: 0.5em;
+    color: white;
+  }
+  
+  .homepage-body-text {
+    font-size: calc(15pt + 0.15vw);
+    margin-top: 0.5em;
+    color: rgb(51, 51, 51);
+  }
+  
+  .banner-btn {
+    margin-top: 1em;
+  }
+  
+  .banner-btn-item {
+    font-size: calc(8pt + 0.15vw);
+    padding-top: calc(0.5em + 0.08vw);
+    padding-bottom: calc(0.5em + 0.08vw);
+    padding-left: calc(0.5em + 0.08vw);
+    padding-right: calc(0.5em + 0.08vw);
+    color: $primary;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: white;
+  
+    &:link {
+      text-decoration: none;
+    }
+  
+    &:visited {
+      text-decoration: none;
+    }
+  }
+  /* ------------------- mid-banner end ---------------------------------- */
